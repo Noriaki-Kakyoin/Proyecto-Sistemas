@@ -18,6 +18,6 @@ printf "\t${BIGreen}+-----------------------+${Color_Off}\n"
 printf "${ICyan}\n\n\n"
 
 
-read -p $'\e[92mUsuarios-ESI> \e[93m' opcion
+read -p $'\33[1;31mUsuarios-ESI> \33[m ' opcion
 
 printf "${Color_Off}"
