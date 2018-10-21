@@ -6,6 +6,8 @@ while [ ${opcion} -gt 0 ]
 do
   case $opcion in
       1)
+	## AGREGAR USUARIO
+	clear
 	printf "${BIRed}Usuarios-ESI${BIBlue}@${BIGreen}Crear Usuario>${BIYellow} Nombre usuario: "
        	read -p '' nombreUsuario
 	printf "${BIRed}Usuarios-ESI${BIBlue}@${BIGreen}Crear Usuario>${BIYellow} Grupo: "
@@ -21,10 +23,23 @@ do
      	fi
 	break;;
       2)
+        ## MODIFICAR USUARIO
         echo "2"
 	break;;
       3)
-        echo "3"
+        ## ELIMINAR USUARIO
+        clear	
+	printf "${BIRed}Usuarios-ESI${BIBlue}@${BIGreen}Eliminar Usuario>${BIYellow} Nombre usuario: "
+	read -p '' nombreUsuario
+	printf "${BIRed}Usuarios-ESI${BIBlue}@${BIGreen}Eliminar Usuario>${BIYellow} Eliminar carpeta personal (S/n): "
+	read -p '' opcion
+	if [ "$opcion" = "S" ] || [ "$opcion" = "s" ]
+       	  then
+	    # Si se quiere eliminar la carpeta personal
+	    . scripts/eliminarUsuario.sh $nombreUsuario $opcion
+	  else
+	    . scripts/eliminarUsuario.sh $nombreUsuario
+	fi
 	break;;
       *)
 	break
