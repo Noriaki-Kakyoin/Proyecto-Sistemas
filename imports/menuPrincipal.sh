@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. imports/colors.sh
+
 clear
 
 # MENU DE INICIO
