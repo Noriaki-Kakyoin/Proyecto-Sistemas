@@ -7,7 +7,7 @@ clear
 # MENU DE INICIO
 
 printf "\t${BIGreen}+-----------------------+          +--------------------+ ${Color_Off}\n"
-printf "\t${BIGreen}| ${BIYellow}Usuarios de ESI Buceo ${BIGreen}|          |       ${BIYellow}CREDITS      ${BIGreen}|${Color_Off}\n"
+printf "\t${BIGreen}|  \033[1;32mUsuarios de ESI Buceo \033[0m   |          |       ${BIYellow}CREDITS      ${BIGreen}|${Color_Off}\n"
 printf "\t${BIGreen}+-----------------------+          +--------------------+${Color_Off}\n"
 printf "\t${BIGreen}|   ${BIYellow}1- Crear usuario    ${BIGreen}|          | ${BIYellow}> Nicolas Cabrera  ${BIGreen}|${Color_Off}\n"
 printf "\t${BIGreen}+-----------------------+          +--------------------+${Color_Off}\n"
