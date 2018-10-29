@@ -28,7 +28,7 @@ do
     break;;
 
     2)
-    . scripts/modificarUsuario.sh
+    . scripts/modificarUsuarios.sh
     break;;
     3)
       ## ELIMINAR USUARIO
