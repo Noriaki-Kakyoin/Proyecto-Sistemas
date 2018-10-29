@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. imports/colors.sh
+. colors.sh
 
 clear
 
