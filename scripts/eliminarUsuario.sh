@@ -2,7 +2,7 @@
 
 # Cierra sesion del usuario a eliminar
 # Para que no salte error.
-pkill -KILL -u $1
+skill -KILL -u $1
 
 # Si selecciona borrar la carpeta personal
 # Sino, borra el usuario y conserva la carpeta.
