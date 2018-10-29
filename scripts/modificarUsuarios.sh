@@ -8,7 +8,7 @@ read -p '' nombreUsuario
 
 # ! Cierra cualquier sesion del usuario para evitar errores
 # A la hora de editarlo
-pkill -KILL -u $nombreUsuario
+skill -KILL -u $nombreUsuario
 
 printf "${BIRed}Usuarios-ESI${BIBlue}@${BIGreen}Modificar Usuario>${BIYellow} Modificar nombre (S/n): "
 read -p '' modificarUsuario
