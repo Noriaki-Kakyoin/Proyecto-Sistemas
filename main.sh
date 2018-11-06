@@ -42,7 +42,7 @@ do
       if [ "$opcion" = "S" ] || [ "$opcion" = "s" ]
         then
           # Si se quiere eliminar la carpeta personal
-          . scripts/eliminarUsuario.sh $nombreUsuario $opcion
+          . scripts/eliminarUsuario.sh $nombreUsuario 0
         else
           . scripts/eliminarUsuario.sh $nombreUsuario
       fi

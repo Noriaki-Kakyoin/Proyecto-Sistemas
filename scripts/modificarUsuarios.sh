@@ -8,7 +8,7 @@ read -p '' nombreUsuario
 
 # ! Cierra cualquier sesion del usuario para evitar errores
 # A la hora de editarlo
-skill -KILL -u $nombreUsuario
+pkill -u $nombreUsuario
 
 printf "${BIRed}Usuarios-ESI${BIBlue}@${BIGreen}Modificar Usuario>${BIYellow} Modificar nombre (S/n): "
 read -p '' modificarUsuario
@@ -56,7 +56,7 @@ if [ "$modificarHome" = "S" ] || [ "$modificarHome" = "s" ]
     # Si se ha modificardo el usuario, se utilizara el nuevo usuario.    
     if [ "$modificarUsuario" = "S" ] || [ "$modificarUsuario" = "s" ]
     	then
-   	    usermod -d $nuevoDirectorio $nuevoUsuario
+   	    usermod -f -d $nuevoDirectorio $nuevoUsuario
 	else
 	    usermod -d $nuevoDirectorio $nombreUsuario
     fi
